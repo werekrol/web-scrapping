@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 URL = 'https://habr.com/ru/all/'
-KEYWORDS = {'дизайн', 'фото', 'web', 'python', 'бот'}
+KEYWORDS = {'дизайн', 'фото', 'web', 'python'}
 SOURCE = requests.get(URL).text
 
 soup = BeautifulSoup(SOURCE, 'lxml')
